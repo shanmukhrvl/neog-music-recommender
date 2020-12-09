@@ -1,0 +1,87 @@
+:root {
+  --primary-color: #111827;
+  --secondary-color: #1f2937;
+  --pink: #ff375f;
+  --off-white: #f3f4f6;
+}
+
+body {
+  background: var(--primary-color);
+  color: var(--off-white);
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  max-width: 600px;
+  padding: 2rem;
+  margin: auto;
+}
+.btn-genre {
+  cursor: pointer;
+  background: var(--off-white);
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid black;
+  margin: 1rem 0.3rem;
+}
+
+.btn-genre:hover {
+  background: var(--pink);
+  color: var(--off-white);
+}
+
+.songs-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.player-container {
+  display: flex;
+  width: 80%;
+  padding: 0.5rem;
+  background: var(--secondary-color);
+  border-radius: 0.5rem;
+}
+
+.player-container p {
+  padding: 1rem;
+  flex: 1;
+  color: var(--pink);
+}
+
+@media (max-width: 450px) {
+  .songs-list {
+    margin: 0.5rem 0;
+    padding: 0;
+  }
+
+  .player-container {
+    padding: 0.5rem 0;
+    width: 100%;
+    flex-direction: column;
+    background: none;
+  }
+
+  .player-container p {
+    padding: 0;
+    text-align: start;
+  }
+}
+
+figure {
+  background: var(--secondary-color);
+  padding: 0.5rem;
+  border-left: 0.2rem solid;
+}
+
+figcaption {
+  color: var(--pink);
+}
+
+footer a {
+  color: var(--off-white);
+}
