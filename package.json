@@ -1,7 +1,7 @@
 {
-  "name": "music-recommendation-app",
+  "name": "goodmusic",
   "version": "1.0.0",
-  "description": "",
+  "description": "A recommendation app built with ReactJs. It recommends few songs of different genres that i love.",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
